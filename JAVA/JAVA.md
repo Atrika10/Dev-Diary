@@ -31,6 +31,38 @@
     - Java AWT & Swing
     - JAVA Applet
     - Java Event Handling
+
+# Advance JAVA
+
+    - Classes & Object
+    - OPP Concept (Encapsulation, Abstraction, Inheritance, Types of Inheritance)
+    - Super Keyword, This Keyword, Final Keyword
+    - Compile time & Runtime Polymorphism
+    - JDK, JRE & JVM
+    - Buffered Reader
+    - Methods
+    - Pass by value & pass by Reference
+    - Constructor
+    - Constructor Overloading
+    - Copy Constructor
+    - Strings, String Constructor & methods, String Buffer
+    - Wrapper Class
+    - Abstruct Class
+    - Interface
+    - Multiple Inheritance with interface
+    - Packages
+    - Exception Handling
+    - Enum
+    - Collections
+    - Basic of Multithreading
+    - Create Threads
+    - Thread Synchronization
+    - Serialization
+    - URL() class
+    - InetAddress() class
+    - Socket Programming in Java
+    - JDBC
+
     
 ## What is JDK?
 
