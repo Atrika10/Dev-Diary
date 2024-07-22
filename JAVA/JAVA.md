@@ -338,3 +338,4 @@ myCar.startEngine(); // Calls the startEngine method of Car
 Classes are required in Java because they provide structure, organization, and modularity to the code. They enable reusability, encapsulation, inheritance, and polymorphism, making it easier to create, manage, and extend complex software applications. By using classes, developers can write cleaner, more maintainable, and more efficient code.
 
 
+### What is Packages in Java ?
