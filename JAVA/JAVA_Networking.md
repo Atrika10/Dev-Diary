@@ -37,3 +37,36 @@ The URL class in Java provides a simple, concise API to access and manipulate in
         }
     }
     ```
+
+### Inet Address Class :
+
+1. It representation an IP address & provide method to get the IP of any Host Name.
+2. Inet Address class is used to encapsulate both the numerical IP address & both the domain name for that address. (2 things we will get)
+
+- The `InetAddress` class in Java is part of the java.net package. It represents an Internet Protocol (IP) address, both IPv4 and IPv6, and provides methods for resolving hostnames to IP addresses and vice versa.
+
+```java
+import java.net.InetAddress;
+public class Basics{
+    
+    public static void main(String[] args){
+
+         try {
+            // Get InetAddress for a hostname
+            InetAddress address = InetAddress.getByName("www.example.com");
+            
+            // Print the hostname and IP address
+            System.out.println("Host Name: " + address.getHostName());
+            System.out.println("Host Address: " + address.getHostAddress());
+            
+            // Get local machine's InetAddress
+            InetAddress localAddress = InetAddress.getLocalHost();
+            System.out.println("Local Host Name: " + localAddress.getHostName());
+            System.out.println("Local Host Address: " + localAddress.getHostAddress());
+        } catch (Exception e) {
+            System.out.println("Unable to resolve host: " + e.getMessage());
+        } 
+        
+    }
+}
+```
