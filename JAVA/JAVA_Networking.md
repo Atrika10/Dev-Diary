@@ -107,3 +107,39 @@ Your description of socket programming captures the fundamental concepts well. H
    - The server processes the incoming data from the client through the socket connection. The server can then respond to the client, continuing the data exchange as needed.
 
 ---
+
+## Steps to Establish a TCP Connection Using Sockets
+
+1. **Server-Side Setup:**
+   - **Create a `ServerSocket` Object:**
+     - The server creates an instance of the `ServerSocket` class, specifying a port number. This port number is where the server listens for incoming connection requests from clients.
+     - Example: `ServerSocket serverSocket = new ServerSocket(8080);`
+
+2. **Listening for Connection Requests:**
+   - **Accepting Client Connections:**
+     - The server calls the `accept()` method on the `ServerSocket` object. This method blocks (waits) until a client makes a connection request.
+     - When a connection request is received, the `accept()` method creates a new `Socket` object for the server to communicate with the client.
+     - Example: `Socket clientSocket = serverSocket.accept();`
+
+3. **Client-Side Setup:**
+   - **Create a `Socket` Object:**
+     - The client creates a `Socket` object, specifying the server's hostname or IP address and the port number to connect to.
+     - This establishes a connection between the client and the server.
+     - Example: `Socket socket = new Socket("localhost", 8080);`
+
+4. **Establishing the Connection:**
+   - **Connection Established:**
+     - When the client creates the `Socket` object, a connection request is sent to the server. If the server accepts the request (via `accept()`), the connection is established.
+     - Both client and server now have `Socket` objects representing the connection, through which they can communicate.
+
+5. **Data Exchange:**
+   - **Input and Output Streams:**
+     -   The server and client communicate using input and output streams, with the client sending data to the server and the server responding.
+     This is done through the `Socket` object on both sides.
+     - Example: `InputStream in = socket.getInputStream(); OutputStream out = socket.getOutputStream();`
+
+* NOTES : First run server side code & then client side code
+
+
+
+
